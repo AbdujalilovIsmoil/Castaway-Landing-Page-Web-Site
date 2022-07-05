@@ -1,4 +1,9 @@
 /* /====================================== BASIC TO THE CODES START ========================================== \ */
+@font-face {
+  font-family: 'DM Sans';
+  src: url("../FONT/DM SANS/DMSans-Medium.ttf");
+}
+
 *,
 *::after,
 *::before {
@@ -18,13 +23,158 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
 .container {
   padding: 0 70px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1440px;
 }
 
-:root {}
+:root {
+  --link-active-color: #118DA8;
+  --link-color: #FFFFFF;
+  --bg-color: #191919;
+}
 
 /* /====================================== BASIC TO THE CODES END ============================================ \ */
+
+/* /====================================== HEADER TO THE CODES START ========================================= \ */
+.header {
+  background-color: var(--bg-color);
+  height: 119px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  transition: all .3s linear;
+}
+
+.header.active {
+  height: 75px;
+  background-color: var(--link-color);
+}
+
+.header.active .nav .nav__list .nav__item .nav__link {
+  color: var(--bg-color);
+  font-weight: 600;
+}
+
+.header.active .nav__intro {
+  color: var(--bg-color);
+}
+
+.header.active .nav .nav__list .nav__item .nav__link.active {
+  color: var(--link-active-color);
+}
+
+.header.active .nav {
+  background-color: var(--link-color);
+  height: 75px;
+}
+
+.nav {
+  background-color: var(--bg-color);
+  max-width: 1200px;
+  height: 119px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .3s linear;
+}
+
+.nav__intro {
+  color: var(--link-color);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.nav .nav__list .nav__item {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav .nav__list .nav__item .nav__link.active {
+  color: var(--link-active-color);
+}
+
+.nav .nav__list .nav__item .nav__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--link-color);
+  transition: all .3s linear;
+}
+
+.nav .nav__list .nav__item .nav__link:hover {
+  color: var(--link-active-color);
+}
+
+/* /====================================== HEADER TO THE CODES END =========================================== \ */
+
+/* /====================================== MAIN TO THE CODES START ========================================= \ */
+.main {
+  margin: 43px 0 0 0;
+}
+
+.main__container {
+  display: flex;
+  gap: 60px;
+}
+
+.main__box.active {
+  margin: 300px 0 0 0;
+}
+
+.main__box_img {
+  height: 873px;
+  max-width: 650px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.main__box_title {
+  width: 535px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 88px;
+  color: var(--link-color);
+  letter-spacing: 3.2px;
+}
+
+.main__box_icon {
+  margin: 90px 0 0 0;
+}
+
+.main__box_icons_paragraph {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--link-color);
+  margin: 0 0 16px 0;
+}
+
+.main__box_icons {
+  gap: 17px;
+  display: flex;
+}
+
+.main__box_icons_img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+/* /====================================== MAIN TO THE CODES END =========================================== \ */
