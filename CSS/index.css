@@ -1,0 +1,30 @@
+/* /====================================== BASIC TO THE CODES START ========================================== \ */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 70px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+}
+
+:root {}
+
+/* /====================================== BASIC TO THE CODES END ============================================ \ */
