@@ -55,6 +55,7 @@ body {
   transition: all .3s linear;
 }
 
+
 .header.active {
   height: 75px;
   background-color: var(--link-color);
@@ -121,6 +122,23 @@ body {
 
 .nav .nav__list .nav__item .nav__link:hover {
   color: var(--link-active-color);
+}
+
+.header.active .fa-bars {
+  color: var(--link-active-color);
+}
+
+.fa-bars{
+  font-size: 30px;
+  color: var(--link-color);  
+  cursor: pointer;
+  display: none;
+}
+
+.fa-times {
+  cursor: pointer;
+  font-size: 30px;
+  color: var(--link-color);
 }
 
 /* /====================================== HEADER TO THE CODES END =========================================== \ */
@@ -476,14 +494,14 @@ body {
   color: var(--link-active-color);
 }
 
-.section__user_container{
+.section__user_container {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   gap: 16px;
   margin: 200px 0 0 0;
 }
 
-.section__user_box{
+.section__user_box {
   height: 321px;
   max-width: 423px;
   width: 100%;
@@ -492,11 +510,11 @@ body {
   padding: 50px;
 }
 
-.fa-star{
+.fa-star {
   color: var(--star-color);
 }
 
-.section__user_box_title{
+.section__user_box_title {
   font-family: sans-serif;
   color: var(--link-color);
   font-style: normal;
@@ -506,27 +524,28 @@ body {
   margin: 21px 0 19px 0;
 }
 
-.section__user_box_paragraph{
+.section__user_box_paragraph {
   font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 29px;
   color: rgba(255, 255, 255, 0.7);
 }
+
 /* /====================================== SECTION TO THE CODES END ======================================== \ */
 
 /* /====================================== FOOTER TO THE CODES START ====================================== \ */
 .footer {
   margin: 200px 0 0 0;
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   height: 292px;
 }
 
-.footer__container{
+.footer__container {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   gap: 146px;
   justify-content: center;
 }
@@ -540,7 +559,7 @@ body {
   margin: 0 0 25px 0;
 }
 
-.footer__box .footer__box_item{
+.footer__box .footer__box_item {
   padding: 5px 0;
 }
 
@@ -571,8 +590,65 @@ body {
   text-decoration: underline;
 }
 
-.footer__box_img{
+.footer__box_img {
   padding: 0 8.5px;
   border-radius: 50%;
 }
+
 /* /====================================== FOOTER TO THE CODES END ======================================== \ */
+
+/* /====================================== RESPONSIVE TO THE CODES START =================================== \ */
+@media (max-width: 1320px) {
+  .main__container {
+    display: flex;
+    gap: 60px;
+    /* flex-wrap: wrap; */
+  }
+  .main__box_img {
+    height: 873px;
+    width: 650px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: none;
+  }
+  .main__box.active {
+    margin: 200px 0 100px 0;
+  }
+  .section__contact_box_img {
+    max-width: 575px;
+    border-radius: 14px;
+    object-fit: cover;
+    height: 743px;
+    display: none;
+  }
+  .section__contact {
+    margin: 200px 0 0 0;
+  }
+}
+
+@media (max-width: 1290px) {
+  .section__container {
+    border-radius: 32px;
+    background-color: var(--section-bg-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding: 40px 0 40px 40px;
+    gap: 53px;
+    min-height: 545px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 60px 0;
+  }
+  .section__box_img {
+    height: 100%;
+    width: 1050px;
+    /* width: 100%; */
+  }
+  .section__box_img.active {
+    height: 100%;
+    width: 1050px;
+    /* width: 100%; */
+  }
+}
+/* /====================================== RESPONSIVE TO THE CODES END ===================================== \ */
