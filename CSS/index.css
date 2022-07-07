@@ -40,6 +40,7 @@ body {
   --link-color: #FFFFFF;
   --bg-color: #191919;
   --section-bg-color: #000000;
+  --star-color: #FCFF51;
 }
 
 /* /====================================== BASIC TO THE CODES END ============================================ \ */
@@ -475,4 +476,31 @@ body {
   color: var(--link-active-color);
 }
 
+.section__user_container{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 16px;
+  margin: 200px 0 0 0;
+}
+
+.section__user_box{
+  height: 321px;
+  max-width: 423px;
+  width: 100%;
+  background-color: var(--section-bg-color);
+  border-radius: 32px;
+  padding: 50px;
+}
+
+.fa-star{
+  color: var(--star-color);
+}
+
+.section__user_box_title{
+
+}
+
+.section__user_box_paragraph{
+  
+}
 /* /====================================== SECTION TO THE CODES END ======================================== \ */
