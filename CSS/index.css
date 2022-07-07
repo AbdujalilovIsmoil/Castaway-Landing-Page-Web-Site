@@ -497,10 +497,82 @@ body {
 }
 
 .section__user_box_title{
-
+  font-family: sans-serif;
+  color: var(--link-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  margin: 21px 0 19px 0;
 }
 
 .section__user_box_paragraph{
-  
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.7);
 }
 /* /====================================== SECTION TO THE CODES END ======================================== \ */
+
+/* /====================================== FOOTER TO THE CODES START ====================================== \ */
+.footer {
+  margin: 200px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  height: 292px;
+}
+
+.footer__container{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 146px;
+  justify-content: center;
+}
+
+.footer__container_box_title {
+  color: var(--link-color);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 0 25px 0;
+}
+
+.footer__box .footer__box_item{
+  padding: 5px 0;
+}
+
+.footer__container_box_icons i {
+  color: var(--link-color);
+  width: 22px;
+  height: 17.94px;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.footer__container_box_icons i:hover {
+  color: var(--link-active-color);
+}
+
+.footer__box .footer__box_item .footer__box_link {
+  font-family: sans-serif;
+  color: var(--link-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  transition: all .3s linear;
+}
+
+.footer__box .footer__box_item .footer__box_link:hover {
+  color: var(--link-active-color);
+  text-decoration: underline;
+}
+
+.footer__box_img{
+  padding: 0 8.5px;
+  border-radius: 50%;
+}
+/* /====================================== FOOTER TO THE CODES END ======================================== \ */
