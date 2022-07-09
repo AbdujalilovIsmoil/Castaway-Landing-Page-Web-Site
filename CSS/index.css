@@ -13,6 +13,7 @@
   text-decoration: none;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -42,7 +43,59 @@ body {
   --star-color: #FCFF51;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--section-bg-color);
+}
+
 /* /====================================== BASIC TO THE CODES END ============================================ \ */
+
+/* /====================================== SECRET TO THE CODES START ========================================= \ */
+.secret__navbar {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.8);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: all .5s linear;
+}
+
+.secret__navbar.active {
+  transform: translateY(0);
+}
+
+.secret__navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.secret__navbar__list .secret__navbar__item .secret__navbar__link {
+  color: var(--link-color);
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  transition: all .3s linear;
+}
+
+.secret__navbar__list .secret__navbar__item .secret__navbar__link:hover {
+  color: var(--link-active-color);
+}
+
+/* /====================================== SECRET TO THE CODES END =========================================== \ */
 
 /* /====================================== HEADER TO THE CODES START ========================================= \ */
 .header {
@@ -136,9 +189,13 @@ body {
 }
 
 .fa-times {
-  cursor: pointer;
   font-size: 30px;
   color: var(--link-color);
+  position: fixed;
+  right: 55px;
+  top: 45px;
+  cursor: pointer;
+
 }
 
 /* /====================================== HEADER TO THE CODES END =========================================== \ */
