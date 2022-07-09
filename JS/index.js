@@ -5,4 +5,5 @@ window.addEventListener("load", () => {
     let header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
   });
+  AOS.init()
 });
