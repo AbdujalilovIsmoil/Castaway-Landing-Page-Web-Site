@@ -1,4 +1,4 @@
-/* /====================================== BASIC TO THE CODES START ========================================== \ */
+/* ****BASIC TO THE CODES START**** */
 @font-face {
   font-family: 'DM Sans';
   src: url("../FONT/DM SANS/DMSans-Medium.ttf");
@@ -53,10 +53,9 @@ body {
   cursor: pointer;
   background-color: var(--section-bg-color);
 }
+/* ****BASIC TO THE CODES END**** */
 
-/* /====================================== BASIC TO THE CODES END ============================================ \ */
-
-/* /====================================== SECRET TO THE CODES START ========================================= \ */
+/* ****SECRET NAVBAR**** */
 .secret__navbar {
   width: 100%;
   height: 100%;
@@ -94,10 +93,9 @@ body {
 .secret__navbar__list .secret__navbar__item .secret__navbar__link:hover {
   color: var(--link-active-color);
 }
+/* ****SECRET NAVBAR END**** */
 
-/* /====================================== SECRET TO THE CODES END =========================================== \ */
-
-/* /====================================== HEADER TO THE CODES START ========================================= \ */
+/* ****HEADER START**** */
 .header {
   background-color: var(--bg-color);
   height: 119px;
@@ -135,7 +133,9 @@ body {
   background-color: var(--link-color);
   height: 75px;
 }
+/* ****HEADER END**** */
 
+/* ****NAV START**** */
 .nav {
   background-color: var(--bg-color);
   max-width: 1200px;
@@ -197,10 +197,9 @@ body {
   cursor: pointer;
 
 }
+/* ****NAV END**** */
 
-/* /====================================== HEADER TO THE CODES END =========================================== \ */
-
-/* /====================================== MAIN TO THE CODES START ========================================= \ */
+/* ****MAIN START**** */
 .main {
   margin: 43px 0 0 0;
 }
@@ -258,10 +257,9 @@ body {
   width: 32px;
   border-radius: 50%;
 }
+/* ****MAIN END**** */
 
-/* /====================================== MAIN TO THE CODES END =========================================== \ */
-
-/* /====================================== SECTION TO THE CODES START ====================================== \ */
+/* ****SECTION START****  */
 .section__content {
   display: flex;
   justify-content: space-between;
@@ -592,10 +590,9 @@ body {
   line-height: 29px;
   color: rgba(255, 255, 255, 0.7);
 }
+/* ****SECTION END**** */
 
-/* /====================================== SECTION TO THE CODES END ======================================== \ */
-
-/* /====================================== FOOTER TO THE CODES START ====================================== \ */
+/* ****FOOTER START**** */
 .footer {
   margin: 200px 0 0 0;
   display: grid;
@@ -654,10 +651,9 @@ body {
   padding: 0 8.5px;
   border-radius: 50%;
 }
+/* ****FOOTER END**** */
 
-/* /====================================== FOOTER TO THE CODES END ======================================== \ */
-
-/* /====================================== RESPONSIVE TO THE CODES START =================================== \ */
+/* ****MEDIA RESPONSIVE START**** */
 @media (max-width: 1320px) {
   .main__container {
     display: flex;
@@ -1309,5 +1305,4 @@ body {
     font-weight: 600;
   }
 }
-
-/* /====================================== RESPONSIVE TO THE CODES END ===================================== \ */
+/* ****MEDIA RESPONSIVE END**** */
